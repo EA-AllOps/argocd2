@@ -28,7 +28,7 @@ jobs:
         run: helm template allops .
 
       - name: Scan chart for security misconfigurations
-        uses: aquasecurity/trivy-action@v0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           scan-type: config
           scan-ref: .
